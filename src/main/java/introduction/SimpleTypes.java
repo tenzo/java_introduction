@@ -19,9 +19,21 @@ public class SimpleTypes {
         System.out.println("Liczba PI to " + PI_PI);
 
         boolean isPaid = false;
-        System.out.println("Czy zapłacono rachunek? " + isPaid);
+        String isPaidTxt = isPaid ? "tak" : "nie";
+        System.out.println("Czy zapłacono rachunek? " + isPaidTxt);
         isPaid = true;
-        System.out.println("A może teraz już zapłacono? " + isPaid);
+        isPaidTxt = isPaid ? "tak" : "nie";
+        System.out.println("A może teraz już zapłacono? " + isPaidTxt);
+
+        int index = 1;
+        String name = "Andrzej";
+        char aLetter = name.charAt(index);
+
+        System.out.println((index + 1) + " literka w imieniu " + name + " to " + aLetter);
+
+        String prefix = "An";
+        boolean isStartingWith = name.startsWith(prefix);
+        System.out.println("Czy imię " + name + " zaczyna się od " + prefix + "? : " + isStartingWith);
     }
 
 }
