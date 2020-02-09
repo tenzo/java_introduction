@@ -10,11 +10,14 @@ public class Test {
                 new Circle(6.7D),
                 new Circle(2.2D)
         };
-
+        double sum = 0.0D;
         for (Figure figure :
                 figures) {
+            sum += figure.area();
             System.out.println("Figura " + figure + " ma powierzchnię " + figure.area());
         }
+
+        System.out.println("Suma powierzchni to " + sum);
 
     }
 }
